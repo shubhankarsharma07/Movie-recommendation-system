@@ -1,0 +1,336 @@
+movieId,title,genres
+1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
+3114,Toy Story 2 (1999),Adventure|Animation|Children|Comedy|Fantasy
+78499,Toy Story 3 (2010),Adventure|Animation|Children|Comedy|Fantasy|IMAX
+2,Jumanji (1995),Adventure|Children|Fantasy
+318,"Shawshank Redemption, The (1994)",Crime|Drama
+858,"Godfather, The (1972)",Crime|Drama
+1221,"Godfather Part II, The (1974)",Crime|Drama
+296,Pulp Fiction (1994),Comedy|Crime|Drama|Thriller
+356,Forrest Gump (1994),Comedy|Drama|Romance|War
+593,"Silence of the Lambs, The (1991)",Crime|Horror|Thriller
+2571,"Matrix, The (1999)",Action|Sci-Fi|Thriller
+6365,"Matrix Reloaded, The (2003)",Action|Sci-Fi|Thriller|IMAX
+2959,Fight Club (1999),Action|Crime|Drama|Thriller
+260,Star Wars: Episode IV - A New Hope (1977),Action|Adventure|Sci-Fi
+1196,Star Wars: Episode V - The Empire Strikes Back (1980),Action|Adventure|Sci-Fi
+1210,Star Wars: Episode VI - Return of the Jedi (1983),Action|Adventure|Sci-Fi
+122886,Star Wars: The Force Awakens (2015),Action|Adventure|Fantasy|Sci-Fi|IMAX
+166528,Rogue One: A Star Wars Story (2016),Action|Adventure|Fantasy|Sci-Fi
+4993,The Lord of the Rings: The Fellowship of the Ring (2001),Adventure|Fantasy
+5952,The Lord of the Rings: The Two Towers (2002),Adventure|Fantasy
+7153,The Lord of the Rings: The Return of the King (2003),Action|Adventure|Drama|Fantasy
+4896,Harry Potter and the Philosopher's Stone (2001),Adventure|Children|Fantasy
+5816,Harry Potter and the Chamber of Secrets (2002),Adventure|Fantasy|Mystery
+8368,Harry Potter and the Prisoner of Azkaban (2004),Adventure|Fantasy|IMAX
+40815,Harry Potter and the Goblet of Fire (2005),Adventure|Fantasy|Thriller|IMAX
+54001,Harry Potter and the Order of the Phoenix (2007),Adventure|Drama|Fantasy|IMAX
+69844,Harry Potter and the Half-Blood Prince (2009),Adventure|Fantasy|Mystery|Romance|IMAX
+81834,Harry Potter and the Deathly Hallows: Part 1 (2010),Action|Adventure|Fantasy|IMAX
+88125,Harry Potter and the Deathly Hallows: Part 2 (2011),Action|Adventure|Drama|Fantasy|Mystery|IMAX
+58559,"Dark Knight, The (2008)",Action|Crime|Drama|IMAX
+33794,Batman Begins (2005),Action|Crime|IMAX
+91529,"Dark Knight Rises, The (2012)",Action|Adventure|Crime|IMAX
+79132,Inception (2010),Action|Crime|Drama|Mystery|Sci-Fi|Thriller|IMAX
+109487,Interstellar (2014),Sci-Fi|IMAX
+4226,Memento (2000),Mystery|Thriller
+48780,"Prestige, The (2006)",Drama|Mystery|Sci-Fi|Thriller
+72998,Avatar (2009),Action|Adventure|Sci-Fi|IMAX
+1721,Titanic (1997),Drama|Romance
+589,Terminator 2: Judgment Day (1991),Action|Sci-Fi
+1240,"Terminator, The (1984)",Action|Sci-Fi|Thriller
+1214,Alien (1979),Horror|Sci-Fi
+1200,Aliens (1986),Action|Horror|Sci-Fi
+541,Blade Runner (1982),Action|Sci-Fi|Thriller|Film-Noir
+924,2001: A Space Odyssey (1968),Adventure|Drama|Sci-Fi
+1270,Back to the Future (1985),Adventure|Comedy|Sci-Fi
+2011,Back to the Future Part II (1989),Adventure|Comedy|Sci-Fi
+1198,Raiders of the Lost Ark (1981),Action|Adventure
+1291,Indiana Jones and the Last Crusade (1989),Action|Adventure
+1097,E.T. the Extra-Terrestrial (1982),Children|Drama|Sci-Fi
+1387,Jaws (1975),Action|Horror|Thriller
+480,Jurassic Park (1993),Action|Adventure|Sci-Fi|Thriller
+117529,Jurassic World (2015),Action|Adventure|Drama|Sci-Fi|Thriller|IMAX
+527,Schindler's List (1993),Drama|War
+2028,Saving Private Ryan (1998),Action|Drama|War
+3578,Gladiator (2000),Action|Adventure|Drama
+110,Braveheart (1995),Action|Drama|War
+47,Se7en (1995),Mystery|Thriller
+50,"Usual Suspects, The (1995)",Crime|Mystery|Thriller
+608,Fargo (1996),Comedy|Crime|Drama|Thriller
+1213,Goodfellas (1990),Crime|Drama
+48516,"Departed, The (2006)",Crime|Drama|Thriller
+106782,"Wolf of Wall Street, The (2013)",Comedy|Crime|Drama
+111,Taxi Driver (1976),Crime|Drama|Thriller
+74458,Shutter Island (2010),Drama|Mystery|Thriller
+919,"Wizard of Oz, The (1939)",Adventure|Children|Fantasy|Musical
+912,Casablanca (1942),Drama|Romance
+923,Citizen Kane (1941),Drama|Mystery
+953,It's a Wonderful Life (1946),Children|Drama|Fantasy|Romance
+904,Rear Window (1954),Mystery|Thriller
+903,Vertigo (1958),Drama|Mystery|Romance|Thriller
+1219,Psycho (1960),Crime|Horror
+1203,12 Angry Men (1957),Drama
+899,Singin' in the Rain (1952),Comedy|Musical|Romance
+2019,Seven Samurai (1954),Action|Adventure|Drama
+5291,Rashomon (1950),Crime|Drama|Mystery
+1201,"Good, the Bad and the Ugly, The (1966)",Action|Adventure|Western
+750,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964),Comedy|War
+1207,To Kill a Mockingbird (1962),Drama
+1035,"Sound of Music, The (1965)",Musical|Romance
+1204,Lawrence of Arabia (1962),Adventure|Drama|War
+1193,One Flew Over the Cuckoo's Nest (1975),Drama
+1206,"Clockwork Orange, A (1971)",Crime|Drama|Sci-Fi
+1258,"Shining, The (1980)",Horror
+1997,"Exorcist, The (1973)",Horror|Mystery
+1982,Halloween (1978),Horror|Thriller
+1954,Rocky (1976),Drama
+1230,Annie Hall (1977),Comedy|Romance
+1208,Apocalypse Now (1979),Action|Drama|War
+1136,Monty Python and the Holy Grail (1975),Adventure|Comedy|Fantasy
+1036,Die Hard (1988),Action|Crime|Thriller
+2716,Ghostbusters (1984),Action|Comedy|Sci-Fi
+1197,"Princess Bride, The (1987)",Action|Adventure|Comedy|Fantasy|Romance
+1968,"Breakfast Club, The (1985)",Comedy|Drama
+2918,Ferris Bueller's Day Off (1986),Comedy
+1246,Dead Poets Society (1989),Drama
+1259,Stand by Me (1986),Adventure|Drama
+1307,When Harry Met Sally... (1989),Comedy|Romance
+1101,Top Gun (1986),Action|Romance
+1222,Full Metal Jacket (1987),Drama|War
+364,"Lion King, The (1994)",Adventure|Animation|Children|Drama|Musical
+588,Aladdin (1992),Adventure|Animation|Children|Comedy|Musical
+595,Beauty and the Beast (1991),Animation|Children|Fantasy|Musical|Romance
+586,Home Alone (1990),Children|Comedy
+500,Mrs. Doubtfire (1993),Comedy|Drama
+1265,Groundhog Day (1993),Comedy|Fantasy|Romance
+1682,"Truman Show, The (1998)",Comedy|Drama|Sci-Fi
+1580,Men in Black (1997),Action|Comedy|Sci-Fi
+1704,Good Will Hunting (1997),Drama|Romance
+2762,"Sixth Sense, The (1999)",Drama|Horror|Mystery
+3147,"Green Mile, The (1999)",Crime|Drama|Fantasy
+2858,American Beauty (1999),Drama|Romance
+293,Léon: The Professional (1994),Action|Crime|Drama|Thriller
+1089,Reservoir Dogs (1992),Crime|Mystery|Thriller
+1732,"Big Lebowski, The (1998)",Comedy|Crime
+1407,Scream (1996),Comedy|Horror|Mystery|Thriller
+780,Independence Day (1996),Action|Adventure|Sci-Fi|Thriller
+150,Apollo 13 (1995),Adventure|Drama|IMAX
+6,Heat (1995),Action|Crime|Thriller
+39,Clueless (1995),Comedy|Romance
+215,Before Sunrise (1995),Drama|Romance
+2671,Notting Hill (1999),Comedy|Romance
+4306,Shrek (2001),Adventure|Animation|Children|Comedy|Fantasy|Romance
+8360,Shrek 2 (2004),Adventure|Animation|Children|Comedy|Musical|Romance
+6377,Finding Nemo (2003),Adventure|Animation|Children|Comedy
+4886,"Monsters, Inc. (2001)",Adventure|Animation|Children|Comedy|Fantasy
+8961,"Incredibles, The (2004)",Action|Adventure|Animation|Children|Comedy
+50872,Ratatouille (2007),Animation|Children|Drama
+60069,WALL-E (2008),Adventure|Animation|Children|Romance|Sci-Fi
+68954,Up (2009),Adventure|Animation|Children|Drama
+134853,Inside Out (2015),Adventure|Animation|Children|Comedy|Drama|Fantasy
+177765,Coco (2017),Adventure|Animation|Children
+900001,Soul (2020),Adventure|Animation|Children|Comedy|Drama|Fantasy
+106696,Frozen (2013),Adventure|Animation|Comedy|Fantasy|Musical|Romance
+152081,Zootopia (2016),Action|Adventure|Animation|Children|Comedy
+900002,Encanto (2021),Animation|Children|Comedy|Fantasy|Musical
+195159,Spider-Man: Into the Spider-Verse (2018),Action|Adventure|Animation|Sci-Fi
+900003,Spider-Man: Across the Spider-Verse (2023),Action|Adventure|Animation|Sci-Fi
+900004,Inside Out 2 (2024),Adventure|Animation|Children|Comedy|Drama
+59315,Iron Man (2008),Action|Adventure|Sci-Fi
+77561,Iron Man 2 (2010),Action|Adventure|Sci-Fi|Thriller|IMAX
+89745,"Avengers, The (2012)",Action|Adventure|Sci-Fi|IMAX
+122892,Avengers: Age of Ultron (2015),Action|Adventure|Sci-Fi
+122912,Avengers: Infinity War (2018),Action|Adventure|Sci-Fi
+900005,Avengers: Endgame (2019),Action|Adventure|Drama|Sci-Fi
+110102,Captain America: The Winter Soldier (2014),Action|Adventure|Sci-Fi|IMAX
+122920,Captain America: Civil War (2016),Action|Sci-Fi|Thriller
+122916,Thor: Ragnarok (2017),Action|Adventure|Comedy|Sci-Fi
+112852,Guardians of the Galaxy (2014),Action|Adventure|Sci-Fi
+122906,Black Panther (2018),Action|Adventure|Sci-Fi
+122904,Deadpool (2016),Action|Adventure|Comedy|Sci-Fi
+168252,Logan (2017),Action|Sci-Fi
+143355,Wonder Woman (2017),Action|Adventure|Fantasy
+900006,"Batman, The (2022)",Action|Crime|Mystery
+900007,Spider-Man: No Way Home (2021),Action|Adventure|Fantasy|Sci-Fi
+5349,Spider-Man (2002),Action|Adventure|Sci-Fi|Thriller
+8636,Spider-Man 2 (2004),Action|Adventure|Sci-Fi|IMAX
+648,Mission: Impossible (1996),Action|Adventure|Mystery|Thriller
+91630,Mission: Impossible - Ghost Protocol (2011),Action|Adventure|Thriller|IMAX
+900008,Mission: Impossible - Fallout (2018),Action|Adventure|Thriller
+49272,Casino Royale (2006),Action|Adventure|Thriller
+96079,Skyfall (2012),Action|Adventure|Thriller|IMAX
+6539,Pirates of the Caribbean: The Curse of the Black Pearl (2003),Action|Adventure|Comedy|Fantasy
+7361,Eternal Sunshine of the Spotless Mind (2004),Drama|Romance|Sci-Fi
+6874,Kill Bill: Vol. 1 (2003),Action|Crime|Thriller
+55820,No Country for Old Men (2007),Crime|Drama|Thriller|Western
+56782,There Will Be Blood (2007),Drama|Western
+63082,Slumdog Millionaire (2008),Crime|Drama|Romance
+68157,Inglourious Basterds (2009),Action|Drama|War
+99114,Django Unchained (2012),Action|Drama|Western
+80463,"Social Network, The (2010)",Drama
+112556,Gone Girl (2014),Drama|Thriller
+112552,Whiplash (2014),Drama
+164909,La La Land (2016),Comedy|Drama|Musical|Romance
+109374,"Grand Budapest Hotel, The (2014)",Comedy|Drama
+122882,Mad Max: Fury Road (2015),Action|Adventure|Sci-Fi|Thriller
+115713,Ex Machina (2015),Drama|Sci-Fi|Thriller
+134130,"Martian, The (2015)",Adventure|Drama|Sci-Fi
+164179,Arrival (2016),Drama|Mystery|Sci-Fi
+900009,Dune (2021),Action|Adventure|Drama|Sci-Fi
+900010,Dune: Part Two (2024),Action|Adventure|Sci-Fi
+900011,Oppenheimer (2023),Drama
+900012,Barbie (2023),Adventure|Comedy|Fantasy
+900013,Everything Everywhere All at Once (2022),Action|Adventure|Comedy|Sci-Fi
+900014,Top Gun: Maverick (2022),Action|Drama
+900015,Joker (2019),Crime|Drama|Thriller
+900016,Knives Out (2019),Comedy|Crime|Drama|Mystery
+900017,1917 (2019),Drama|War
+168250,Get Out (2017),Horror|Mystery|Thriller
+900018,Hereditary (2018),Drama|Horror|Mystery|Thriller
+900019,"Quiet Place, A (2018)",Drama|Horror|Sci-Fi|Thriller
+900020,Past Lives (2023),Drama|Romance
+46578,Little Miss Sunshine (2006),Comedy|Drama
+8874,Shaun of the Dead (2004),Comedy|Horror
+6942,Love Actually (2003),Comedy|Drama|Romance
+5989,Catch Me If You Can (2002),Crime|Drama
+5418,"Bourne Identity, The (2002)",Action|Mystery|Thriller
+4022,Cast Away (2000),Drama
+900021,3 Idiots (2009),Comedy|Drama
+900022,Dangal (2016),Action|Drama
+900023,Lagaan (2001),Drama|Musical|Romance
+900024,Sholay (1975),Action|Adventure|Comedy|Drama
+900025,Dilwale Dulhania Le Jayenge (1995),Comedy|Drama|Romance
+900026,Zindagi Na Milegi Dobara (2011),Comedy|Drama|Romance
+900027,Andhadhun (2018),Comedy|Crime|Thriller
+900028,Gully Boy (2019),Drama|Musical
+900029,Queen (2014),Comedy|Drama
+900030,Taare Zameen Par (2007),Children|Drama
+900031,Swades (2004),Drama
+900032,Rang De Basanti (2006),Comedy|Drama
+900033,Chak De! India (2007),Drama
+900034,Kabhi Khushi Kabhie Gham... (2001),Drama|Musical|Romance
+900035,Kuch Kuch Hota Hai (1998),Comedy|Drama|Romance
+900036,Gangs of Wasseypur - Part 1 (2012),Action|Crime|Drama
+900037,Barfi! (2012),Comedy|Drama|Romance
+900038,PK (2014),Comedy|Drama|Sci-Fi
+900039,Munna Bhai M.B.B.S. (2003),Comedy|Drama
+900040,Lage Raho Munna Bhai (2006),Comedy|Drama|Romance
+900041,Dil Chahta Hai (2001),Comedy|Drama|Romance
+900042,Jab We Met (2007),Comedy|Drama|Romance
+900043,Yeh Jawaani Hai Deewani (2013),Comedy|Drama|Romance
+900044,Kahaani (2012),Mystery|Thriller
+900045,Drishyam (2015),Crime|Drama|Mystery|Thriller
+900046,Tumbbad (2018),Drama|Fantasy|Horror
+900047,Stree (2018),Comedy|Horror
+900048,Badhaai Ho (2018),Comedy|Drama
+900049,Piku (2015),Comedy|Drama
+900050,"Lunchbox, The (2013)",Drama|Romance
+900051,Bajrangi Bhaijaan (2015),Action|Comedy|Drama
+900052,Uri: The Surgical Strike (2019),Action|Drama|War
+900053,12th Fail (2023),Drama
+900054,Laapataa Ladies (2024),Comedy|Drama
+900055,Jawan (2023),Action|Thriller
+900056,Pathaan (2023),Action|Adventure|Thriller
+900057,War (2019),Action|Thriller
+900058,Dhoom (2004),Action|Crime|Thriller
+900059,Dhoom 2 (2006),Action|Crime|Thriller
+900060,Dhoom 3 (2013),Action|Crime|Thriller
+900061,Golmaal: Fun Unlimited (2006),Comedy
+900062,Golmaal Returns (2008),Comedy
+900063,Golmaal Again (2017),Comedy|Fantasy|Horror
+900064,Hera Pheri (2000),Comedy|Crime
+900065,Andaz Apna Apna (1994),Comedy|Romance
+900066,Mughal-e-Azam (1960),Drama|Musical|Romance
+900067,Mother India (1957),Drama
+900068,Anand (1971),Drama|Musical
+900069,Mr. India (1987),Action|Comedy|Fantasy|Sci-Fi
+900070,Om Shanti Om (2007),Action|Comedy|Drama|Fantasy|Musical|Romance
+900071,Haider (2014),Crime|Drama|Thriller
+900072,Raazi (2018),Action|Drama|Thriller
+900073,English Vinglish (2012),Comedy|Drama
+900074,Animal (2023),Action|Crime|Drama
+900075,Vikram (2022),Action|Crime|Thriller
+900076,Kaithi (2019),Action|Thriller
+900077,Super Deluxe (2019),Comedy|Crime|Drama
+900078,Jai Bhim (2021),Crime|Drama
+900079,Soorarai Pottru (2020),Drama
+900080,96 (2018),Drama|Romance
+900081,Asuran (2019),Action|Drama
+900082,Ponniyin Selvan: Part I (2022),Action|Adventure|Drama
+900083,Vikram Vedha (2017),Action|Crime|Thriller
+900084,Baahubali: The Beginning (2015),Action|Drama|Fantasy
+900085,Baahubali 2: The Conclusion (2017),Action|Drama|Fantasy
+900086,RRR (2022),Action|Drama
+900087,Eega (2012),Action|Comedy|Fantasy
+900088,Arjun Reddy (2017),Drama|Romance
+900089,Pushpa: The Rise (2021),Action|Crime|Drama
+900090,Magadheera (2009),Action|Fantasy|Romance
+900091,Sita Ramam (2022),Drama|Romance|War
+900092,Kalki 2898 AD (2024),Action|Fantasy|Sci-Fi
+900093,Drishyam (2013),Crime|Drama|Thriller
+900094,Kumbalangi Nights (2019),Comedy|Drama|Romance
+900095,Premam (2015),Comedy|Drama|Romance
+900096,Bangalore Days (2014),Comedy|Drama|Romance
+900097,Manichitrathazhu (1993),Comedy|Horror|Mystery|Thriller
+900098,"Great Indian Kitchen, The (2021)",Drama
+900099,Minnal Murali (2021),Action|Adventure|Comedy|Fantasy
+900100,Manjummel Boys (2024),Adventure|Drama|Thriller
+900101,Aavesham (2024),Action|Comedy
+900102,Bramayugam (2024),Horror|Mystery|Thriller
+900103,K.G.F: Chapter 1 (2018),Action|Crime|Drama
+900104,K.G.F: Chapter 2 (2022),Action|Crime|Drama
+900105,Kantara (2022),Action|Drama|Thriller
+900106,777 Charlie (2022),Adventure|Comedy|Drama
+900107,Lucia (2013),Drama|Mystery|Sci-Fi|Thriller
+900108,Pather Panchali (1955),Drama
+900109,Sairat (2016),Drama|Romance
+5618,Spirited Away (2001),Adventure|Animation|Fantasy
+5971,My Neighbor Totoro (1988),Animation|Children|Drama|Fantasy
+3000,Princess Mononoke (1997),Action|Adventure|Animation|Drama|Fantasy
+31658,Howl's Moving Castle (2004),Adventure|Animation|Fantasy|Romance
+26662,Kiki's Delivery Service (1989),Adventure|Animation|Children|Drama|Fantasy
+6350,Castle in the Sky (1986),Action|Adventure|Animation|Children|Fantasy|Sci-Fi
+5690,Grave of the Fireflies (1988),Animation|Drama|War
+1274,Akira (1988),Action|Animation|Sci-Fi
+900110,Your Name. (2016),Animation|Drama|Fantasy|Romance
+900111,"Silent Voice, A (2016)",Animation|Drama|Romance
+900112,Weathering with You (2019),Animation|Drama|Fantasy|Romance
+900113,Ponyo (2008),Adventure|Animation|Children|Fantasy
+900114,"Boy and the Heron, The (2023)",Adventure|Animation|Drama|Fantasy
+900115,Suzume (2022),Adventure|Animation|Drama|Fantasy
+900116,Perfect Blue (1997),Animation|Horror|Mystery|Thriller
+900117,Shoplifters (2018),Crime|Drama
+900118,Drive My Car (2021),Drama
+900119,Godzilla Minus One (2023),Action|Drama|Horror|Sci-Fi
+900120,Battle Royale (2000),Action|Drama|Horror|Thriller
+202439,Parasite (2019),Comedy|Drama|Thriller
+27773,Oldboy (2003),Action|Drama|Mystery|Thriller
+900121,Memories of Murder (2003),Crime|Drama|Mystery|Thriller
+900122,"Handmaiden, The (2016)",Drama|Romance|Thriller
+900123,Train to Busan (2016),Action|Horror|Thriller
+900124,"Host, The (2006)",Action|Comedy|Drama|Horror|Sci-Fi
+900125,Burning (2018),Drama|Mystery|Thriller
+900126,Decision to Leave (2022),Crime|Drama|Mystery|Romance
+900127,Miracle in Cell No. 7 (2013),Comedy|Drama
+4973,Amélie (2001),Comedy|Romance
+92259,"Intouchables, The (2011)",Comedy|Drama
+900128,La Haine (1995),Crime|Drama
+900129,Portrait of a Lady on Fire (2019),Drama|Romance
+900130,Anatomy of a Fall (2023),Crime|Drama|Mystery|Thriller
+48394,Pan's Labyrinth (2006),Drama|Fantasy|Thriller
+4235,Amores Perros (2000),Drama|Thriller
+900131,"Secret in Their Eyes, The (2009)",Crime|Drama|Mystery|Romance
+900132,"Orphanage, The (2007)",Drama|Horror|Mystery|Thriller
+900133,Society of the Snow (2023),Drama|Thriller
+900134,"Invisible Guest, The (2016)",Crime|Mystery|Thriller
+2692,Run Lola Run (1998),Action|Crime|Thriller
+900135,"Lives of Others, The (2006)",Drama|Thriller
+900136,All Quiet on the Western Front (2022),Action|Drama|War
+2324,Life Is Beautiful (1997),Comedy|Drama|Romance|War
+1172,Cinema Paradiso (1988),Drama|Romance
+3996,"Crouching Tiger, Hidden Dragon (2000)",Action|Drama|Romance
+900137,In the Mood for Love (2000),Drama|Romance
+6016,City of God (2002),Action|Adventure|Crime|Drama|Thriller
+900138,"Separation, A (2011)",Drama|Mystery
+900139,Another Round (2020),Comedy|Drama

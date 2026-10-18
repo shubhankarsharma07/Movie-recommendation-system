@@ -1,0 +1,62 @@
+{
+  "version": "v20261002_060331",
+  "trained_at": "2026-10-02T06:03:29Z",
+  "exported_at": "2026-10-02T06:03:31Z",
+  "algorithm": "SVD (Surprise, biased matrix factorisation)",
+  "n_factors": 50,
+  "n_epochs": 40,
+  "lr_all": 0.01,
+  "reg_all": 0.05,
+  "global_mean": 3.6925,
+  "fold_in_reg": 0.1,
+  "n_items": 378,
+  "n_cf_items": 335,
+  "n_train_ratings": 50225,
+  "n_users_trained": 800,
+  "embedding_model": "tfidf-svd-128",
+  "embedding_dim": 128,
+  "emotion_model": "keyword-lexicon-v1 (fallback)",
+  "metrics": {
+    "rmse": 0.667,
+    "mae": 0.5374,
+    "baseline_global_mean_rmse": 0.8587,
+    "baseline_global_mean_mae": 0.7076,
+    "baseline_bias_rmse": 0.7265,
+    "baseline_bias_mae": 0.5903,
+    "precision_at_10": 0.0819,
+    "recall_at_10": 0.1068,
+    "ndcg_at_10": 0.1083,
+    "popularity_precision_at_10": 0.0772,
+    "popularity_recall_at_10": 0.1053,
+    "popularity_ndcg_at_10": 0.1033,
+    "blend_precision_at_10": 0.1259,
+    "blend_recall_at_10": 0.1649,
+    "blend_ndcg_at_10": 0.1797,
+    "eval_users": 764,
+    "split": "temporal (latest 20% of each user's ratings)",
+    "n_test_ratings": 10367
+  },
+  "blend_weights": {
+    "cf": 0.45,
+    "content": 0.15,
+    "ref": 0.35,
+    "ctx": 0.25,
+    "quality": 0.0,
+    "trend": 0.2,
+    "behavior": 0.1
+  },
+  "blend_formula": "score = w_cf*cf_norm + w_content*content_sim + w_quality*quality_score + w_trend*trend_norm (+ w_ref*ref_sim + w_ctx*ctx_match + w_behavior*behavior at serve time); cf_norm = clip((r_hat-0.5)/4.5,0,1) with r_hat = global_mean + b_u + b_i + q_i.p_u; content_sim = max(0, cos(plot_emb_i, mean plot_emb of titles the user rated >= 4)); trend_norm = 0.5*popularity_score + 0.5*(0.5+0.5*tanh(2*trending_velocity))",
+  "data_sources": [
+    "CineMatch demo dataset (synthetic ratings, hand-written metadata)"
+  ],
+  "dataset_mode": "sample",
+  "catalog_counts": {
+    "movie": 335,
+    "series": 43
+  },
+  "ratings_sampled": false,
+  "n_ratings_before_sampling": 50225,
+  "with_app_data": false,
+  "app_ratings": 0,
+  "app_pseudo_ratings": 0
+}

@@ -1,0 +1,138 @@
+/* ==========================================================================
+   CineMatch — ambient.css
+   The fixed light show behind every page:
+     1. a heavily blurred copy of the current film's backdrop (two layers that
+        cross-fade),
+     2. four slow "aurora" blobs painted in the film's palette,
+     3. a vignette and a whisper of film grain on top.
+   js/ambient.js only changes the --amb-* colours and swaps the backdrop;
+   the transitions below do the rest.
+   ========================================================================== */
+
+#ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--amb-deep);
+  /* the magic: registered colours fade between films */
+  transition:
+    --amb-1 1.8s var(--ease-film),
+    --amb-2 2.1s var(--ease-film),
+    --amb-3 2.4s var(--ease-film),
+    --amb-4 2.6s var(--ease-film),
+    --amb-deep 1.6s var(--ease-film);
+  contain: strict;
+}
+
+/* ---- 1. Blurred backdrop ------------------------------------------------ */
+.amb-backdrop { position: absolute; inset: -8%; }
+.amb-layer {
+  position: absolute; inset: 0;
+  opacity: 0;
+  filter: blur(46px) saturate(1.25);
+  transform: scale(1.08);
+  transition: opacity 1.6s var(--ease-film), transform 9s ease-out;
+}
+.amb-layer.is-on { opacity: var(--amb-backdrop-opacity, 0.32); transform: scale(1); }
+.amb-layer > img,
+.amb-layer > svg { width: 100%; height: 100%; object-fit: cover; }
+
+/* ---- 2. Aurora blobs ------------------------------------------------------ */
+.amb-blob {
+  position: absolute;
+  width: 80vmax; height: 80vmax;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: var(--amb-blob-opacity, 0.58);
+  will-change: transform;
+  transition: opacity 1.4s ease;
+}
+.amb-blob--1 {
+  left: -28vmax; top: -34vmax;
+  background: radial-gradient(closest-side, var(--amb-1), transparent 72%);
+  animation: amb-drift-1 46s ease-in-out infinite alternate;
+}
+.amb-blob--2 {
+  right: -34vmax; top: -10vmax;
+  background: radial-gradient(closest-side, var(--amb-2), transparent 70%);
+  animation: amb-drift-2 58s ease-in-out infinite alternate;
+}
+.amb-blob--3 {
+  left: 6vmax; bottom: -52vmax;
+  background: radial-gradient(closest-side, var(--amb-3), transparent 70%);
+  animation: amb-drift-3 64s ease-in-out infinite alternate;
+}
+.amb-blob--4 {
+  width: 46vmax; height: 46vmax;
+  right: 8vmax; bottom: -14vmax;
+  background: radial-gradient(closest-side, var(--amb-4), transparent 70%);
+  opacity: calc(var(--amb-blob-opacity, 0.58) * 0.75);
+  animation: amb-drift-4 40s ease-in-out infinite alternate;
+}
+
+@keyframes amb-drift-1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(14vmax, 8vmax) scale(1.12); }
+  100% { transform: translate(4vmax, 16vmax) scale(0.94); }
+}
+@keyframes amb-drift-2 {
+  0%   { transform: translate(0, 0) scale(1.05); }
+  50%  { transform: translate(-12vmax, 12vmax) scale(0.9); }
+  100% { transform: translate(-4vmax, -6vmax) scale(1.1); }
+}
+@keyframes amb-drift-3 {
+  0%   { transform: translate(0, 0) scale(0.95); }
+  50%  { transform: translate(18vmax, -10vmax) scale(1.08); }
+  100% { transform: translate(30vmax, -2vmax) scale(1); }
+}
+@keyframes amb-drift-4 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-20vmax, -16vmax) scale(1.25); }
+}
+
+/* ---- 3. Vignette + grain -------------------------------------------------- */
+.amb-vignette {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(120% 90% at 50% 30%, transparent 40%, color-mix(in srgb, var(--amb-deep) 70%, #000) 100%),
+    linear-gradient(to bottom, transparent 55%, color-mix(in srgb, var(--amb-deep) 80%, transparent) 100%);
+}
+.amb-grain {
+  position: absolute; inset: -50%;
+  background-image: var(--grain, none);
+  background-size: 180px 180px;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  animation: amb-grain 1.1s steps(5) infinite;
+}
+@keyframes amb-grain {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(-3%, 2%); }
+  40%  { transform: translate(2%, -3%); }
+  60%  { transform: translate(-1%, 3%); }
+  80%  { transform: translate(3%, 1%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* ---- Modes (set with data-mode on #ambient) ------------------------------ */
+/* takeover: a film is open in the details modal — let its colours flood in */
+#ambient[data-mode="takeover"] { --amb-blob-opacity: 0.72; --amb-backdrop-opacity: 0.5; }
+/* player: almost dark, the "screen" is the focus */
+#ambient[data-mode="player"]   { --amb-blob-opacity: 0.18; --amb-backdrop-opacity: 0.12; }
+/* auth: a softer wash behind the poster mosaic */
+#ambient[data-mode="auth"]     { --amb-blob-opacity: 0.6;  --amb-backdrop-opacity: 0; }
+/* quiet: data-heavy pages (admin) keep the light low for readability */
+#ambient[data-mode="quiet"]    { --amb-blob-opacity: 0.26; --amb-backdrop-opacity: 0.12; }
+
+/* Reduced motion: keep the colours, stop the drifting */
+@media (prefers-reduced-motion: reduce) {
+  .amb-blob, .amb-grain { animation: none !important; }
+  .amb-layer { transform: none !important; }
+}
+
+/* Very small screens: lighter blur for performance */
+@media (max-width: 640px) {
+  .amb-layer { filter: blur(30px) saturate(1.2); }
+}

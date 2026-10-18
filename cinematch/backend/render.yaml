@@ -1,0 +1,53 @@
+# Render Blueprint for CineMatch.
+# Render looks for render.yaml in the repo ROOT by default. Either copy this file
+# there, or point "Blueprint file path" at backend/render.yaml when you create
+# the Blueprint in the Render dashboard. Paths below are relative to the repo root.
+services:
+  # ---------------------------------------------------------------- FastAPI backend
+  - type: web
+    name: cinematch-api
+    runtime: python
+    plan: free                      # 512 MB RAM, sleeps after 15 min idle
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: DATABASE_URL           # Postgres URL from Neon / Supabase / Render Postgres
+        sync: false                 #   (postgres:// URLs are fixed up automatically)
+      - key: JWT_SECRET
+        generateValue: true         # Render creates a long random secret
+      - key: ADMIN_EMAILS           # comma-separated, e.g. you@example.com
+        sync: false
+      - key: OPENWEATHER_API_KEY    # free key from openweathermap.org (optional)
+        sync: false
+      - key: CORS_ORIGINS           # your static site URL, e.g. https://cinematch-web.onrender.com
+        sync: false
+      - key: ARTIFACTS_DIR
+        value: ./artifacts
+      - key: ENABLE_INAPP_RETRAIN
+        value: "false"
+      # glibc memory tuning: fewer per-thread memory pools and big numpy
+      # temporaries handed straight back to the OS. Measured with a 65,000-title
+      # catalog after 38 parallel requests: 347 MB with these, 539 MB without.
+      - key: MALLOC_ARENA_MAX
+        value: "2"
+      - key: MALLOC_MMAP_THRESHOLD_
+        value: "131072"
+
+  # ---------------------------------------------------------------- static frontend
+  - type: web
+    name: cinematch-web
+    runtime: static
+    buildCommand: echo "no build step - plain HTML/CSS/JS"
+    staticPublishPath: ./frontend   # relative to the repo root
+    buildFilter:
+      paths:
+        - frontend/**
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CineMatch</title>
+  <meta name="description" content="Personalised film and series picks that fit your mood, your weather and the evening you're having.">
+  <meta name="theme-color" content="#09080d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f2b544'/%3E%3Cstop offset='.5' stop-color='%23e0457b'/%3E%3Cstop offset='1' stop-color='%236c4be0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%2309080d'/%3E%3Ccircle cx='32' cy='32' r='17' fill='url(%23g)'/%3E%3C/svg%3E">
+
+  <!-- Fonts: Bodoni Moda (film titles), Hanken Grotesk (interface), League Gothic (generated poster art) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&family=League+Gothic&display=swap">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/ambient.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- The ambient layer: a fixed, full-screen light show behind everything.
+       Its colours follow whichever film you are looking at (see js/ambient.js). -->
+  <div id="ambient" aria-hidden="true">
+    <div class="amb-backdrop">
+      <div class="amb-layer"></div>
+      <div class="amb-layer"></div>
+    </div>
+    <div class="amb-blob amb-blob--1"></div>
+    <div class="amb-blob amb-blob--2"></div>
+    <div class="amb-blob amb-blob--3"></div>
+    <div class="amb-blob amb-blob--4"></div>
+    <div class="amb-vignette"></div>
+    <div class="amb-grain"></div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="nav" class="nav" hidden></header>
+  <main id="main" tabindex="-1"></main>
+  <nav id="tabbar" class="tabbar" aria-label="Sections" hidden></nav>
+
+  <!-- Overlays (hover preview, drawers, modal, player) are mounted here -->
+  <div id="overlay-root"></div>
+  <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p class="noscript">CineMatch needs JavaScript turned on to show your recommendations.</p>
+  </noscript>
+
+  <!-- Required attributions (TMDB + OpenWeather free-tier terms) -->
+  <footer class="credits" style="position:relative;z-index:2;padding:32px 16px 96px;text-align:center;font-size:12px;opacity:.55">
+    This product uses the TMDB API but is not endorsed or certified by TMDB.
+    Weather data provided by <a href="https://openweathermap.org/" target="_blank" rel="noopener" style="color:inherit">OpenWeather</a>.
+    Ratings data: MovieLens (GroupLens Research).
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

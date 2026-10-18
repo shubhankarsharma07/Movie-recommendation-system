@@ -1,0 +1,8 @@
+# OPTIONAL - real neural models for step5 (embeddings) and step6 (emotions).
+# Without these the pipeline uses its fast fallbacks (TF-IDF+SVD and a keyword lexicon).
+# Big download (~1-2 GB with torch). On Google Colab torch is already installed.
+#   pip install -r requirements-extra.txt
+# CPU-only torch is much smaller:  pip install torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers>=2.7
+transformers>=4.40
+torch>=2.1
